@@ -97,8 +97,33 @@ body {
   letter-spacing: -1px;
 }
 
-
-
+/* Customization
+------------------------- */
+.navbar-brand {
+	padding: 8px 15px;
+}
+#logo, #insta, #linkedin, #dribbble {
+	background-image:url('../img/sprite.png');
+	display: block;
+}
+#logo {
+	background-position: -103px 0px;
+	width: 234px;
+	height: 35px;
+}
+#insta, #linkedin, #dribbble {
+	width: 34px;
+	height: 34px;
+}
+#insta {
+	background-position: -103px 0px;
+}
+#linkedin {
+	background-position: -103px 0px;
+}
+#dribbble {
+	background-position: -103px 0px;
+}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
