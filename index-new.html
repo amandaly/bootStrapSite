@@ -24,17 +24,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-19629218-1', 'www.amandalynndeleo.com');
-        ga('require', 'displayfeatures');
-        ga('send', 'pageview');
-    </script>
+    <link rel="stylesheet" href="css/lightbox.css">
   </head>
 
 <body>
@@ -58,9 +48,9 @@ m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBef
             <li><a href="#contact">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://www.linkedin.com/in/amandaly/"><span id="linkedin"></span></a></li>
+            <li><a href="http://www.linkedin.com/in/amandaly/" target="_blank"><span id="linkedin"></span></a></li>
             <li><a href="https://dribbble.com/amandaly" target="_blank"><span id="dribbble"></span></a></li>
-            <li><a href="http://instagram.com/amanvid"><span id="insta"></span></a></li>
+            <li><a href="http://instagram.com/amanvid" target="_blank"><span id="insta"></span></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -70,12 +60,15 @@ m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBef
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
-
+					<a ><img class="example-image" src="img/demopage/image-1.jpg" alt="image-1" /></a>
     <div class="container about">
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">N</p>
+          <h2 class="featurette-heading">A developer and designer. <span class="text-muted">But here's some other stuff.</span></h2>
+          <p class="lead">When I'm not developing sites, I'm teaching <a href="http://studio34yoga.com" target="_blank">yoga classes</a>, running with the 
+          	<a href="http://www.westphillyrunners.com/" target="_blank">West Philly Runners</a>, riding my <a href="img/beatnik.jpg" data-lightbox="Beatnik">Jamis Beatnik</a> day or night, blazing heat or freezing cold, 
+          	reading my kindle or hanging out with my <a href="img/twocats.jpg" data-lightbox="Beatnik">two amazing cats</a>. I'm as much a designer as I am a fine artist, I love to look at things and arrange them 
+          	in interesting and beautiful ways. This video has made an impression on my work in a big way: <a href="http://www.youtube.com/watch?v=s-CTkbHnpNQ" target="_blank">Always be knolling.</a></p>
         </div>
         <div class="col-md-5">
           <img class="featurette-image img-responsive img-circle" src="img/top2.png" alt="Generic placeholder image">
@@ -89,18 +82,18 @@ m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBef
         <div class="col-lg-4">
           <img class="img-circle" src="img/frontenddev.png" alt="Generic placeholder image">
           <h2>Front End Developer</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p>HTML5, CSS3, Javascript, and JQuery are all in my wheelhouse. I have experience coding from designers' PSDs, creating all of the interactive features they can think of using jQuery's functions to creative smooth interfaces.</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="img/projmang.png" alt="Generic placeholder image">
           <h2>Project Manager</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p>My approach is an iterative process where each developer is given features as the client prioritizes them. </p>
           <p><a class="btn btn-default" href="resume/AmandaDeLeo-Resume.pdf" role="button">Download My Resume &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="img/uxdesign.png" alt="Generic placeholder image">
           <h2>UX Designer</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p>Whenever I am asked to design, the first thing I think about is the user. </p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -163,7 +156,7 @@ m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBef
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-7">
-          <img class="featurette-image img-responsive" src="img/work/5.png" alt="Generic placeholder image">
+                <div id="map_canvas"></div>   
         </div>
       </div>
       <!-- /END THE FEATURETTES -->
@@ -181,9 +174,23 @@ m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBef
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster-->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="js/googlemap.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/docs.min.js"></script>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/lightbox.min.js"></script>
+        <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-19629218-1', 'www.amandalynndeleo.com');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+    </script>
   </body>
 </html>

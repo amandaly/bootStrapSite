@@ -53,6 +53,13 @@ padding-left: 15px;
 .about {
 	padding:80px 0 0;
 }
+#map-canvas {
+    height: 100%;
+    margin: 0px;
+    padding: 0px
+    width:300px;
+}
+
 /* MARKETING CONTENT
 -------------------------------------------------- */
 /* Pad the edges of the mobile views a bit */
@@ -113,6 +120,6 @@ font-size: 50px;
 }
 @media (min-width: 992px) {
 .featurette-heading {
-margin-top: 120px;
+margin-top: 70px;
 }
 }
