@@ -24,7 +24,30 @@
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/lightbox.css">
+<link rel="stylesheet" href="source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="source/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<script type="text/javascript" src="source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			
+			$(document).ready(function() {
+				$('.fancybox-media').fancybox({
+					openEffect  : 'none',
+					closeEffect : 'none',
+					helpers : {
+						media : {}
+					}
+				});
+			});
+});
+	</script>
   </head>
 
 <body>
@@ -66,9 +89,9 @@
         <div class="col-md-7">
           <h2 class="featurette-heading">A developer and designer. <span class="text-muted">But here's some other stuff.</span></h2>
           <p class="lead">When I'm not developing sites, I'm teaching <a href="http://studio34yoga.com" target="_blank">yoga classes</a>, running with the 
-          	<a href="http://www.westphillyrunners.com/" target="_blank">West Philly Runners</a>, riding my <a href="img/beatnik.jpg" data-lightbox="Beatnik">Jamis Beatnik</a> day or night, blazing heat or freezing cold, 
-          	reading my kindle or hanging out with my <a href="img/twocats.jpg" data-lightbox="Beatnik">two amazing cats</a>. I'm as much a designer as I am a fine artist, I love to look at things and arrange them 
-          	in interesting and beautiful ways. This video has made an impression on my work in a big way: <a href="http://www.youtube.com/watch?v=s-CTkbHnpNQ" target="_blank">Always be knolling.</a></p>
+          	<a href="http://www.westphillyrunners.com/" target="_blank">West Philly Runners</a>, riding my <a class="fancybox" href="img/beatnik.jpg">Jamis Beatnik</a> day or night, blazing heat or freezing cold, 
+          	<a class="fancybox fancybox.iframe" href="goodreads.html">reading on my kindle</a> or hanging out with my <a class="fancybox" href="img/twocats.jpg">two amazing cats</a>. I'm as much a designer as I am a fine artist, I love to look at things and arrange them 
+          	in interesting and beautiful ways. This video has made an impression on my work in a big way: <a class="fancybox-media" href="http://youtu.be/s-CTkbHnpNQ">Always be knolling.</a></p>
         </div>
         <div class="col-md-5">
           <img class="featurette-image img-responsive img-circle" src="img/top2.png" alt="Generic placeholder image">
@@ -88,7 +111,7 @@
           <img class="img-circle" src="img/projmang.png" alt="Generic placeholder image">
           <h2>Project Manager</h2>
           <p>My approach is an iterative process where each developer is given features as the client prioritizes them. </p>
-          <p><a class="btn btn-default" href="resume/AmandaDeLeo-Resume.pdf" role="button">Download My Resume &raquo;</a></p>
+          <p><a class="btn btn-default" href="resume/AmandaDeLeo-Resume.pdf" target="_blank" role="button">Download My Resume &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="img/uxdesign.png" alt="Generic placeholder image">
@@ -176,11 +199,8 @@
     <!-- Placed at the end of the document so the pages load faster-->
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script src="js/googlemap.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/docs.min.js"></script>
-	<script src="js/jquery-1.11.0.min.js"></script>
-	<script src="js/lightbox.min.js"></script>
         <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
