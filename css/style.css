@@ -90,6 +90,9 @@ font-weight: 300;
 line-height: 1;
 letter-spacing: -1px;
 }
+.text-muted {
+	display:block;
+}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 768px) {

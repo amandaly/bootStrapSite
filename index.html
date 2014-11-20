@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Amanda Lynn DeLeo">
     <link rel="shortcut icon" href="ico/favicon.ico">
 
-    <title>Amanda Lynn DeLeo | Front-End Web Developer, UX Designer, and Project Manager</title>
+    <title>Amanda Lynn DeLeo | Front End Developer, UX Developer, UX Designer, and Project Manager</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -24,6 +24,30 @@
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="source/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<script type="text/javascript" src="source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			
+			$(document).ready(function() {
+				$('.fancybox-media').fancybox({
+					openEffect  : 'none',
+					closeEffect : 'none',
+					helpers : {
+						media : {}
+					}
+				});
+			});
+		});
+	</script>
   </head>
 
 <body>
@@ -42,153 +66,72 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#work">Work</a></li>
             <li><a href="#contact">Contact</a></li>
-            <!-- <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li> -->
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://www.linkedin.com/in/amandaly/"><span id="linkedin"></span></a></li>
+            <li><a href="http://www.linkedin.com/in/amandaly/" target="_blank"><span id="linkedin"></span></a></li>
             <li><a href="https://dribbble.com/amandaly" target="_blank"><span id="dribbble"></span></a></li>
-            <li><a href="http://instagram.com/amanvid"><span id="insta"></span></a></li>
+            <li><a href="http://instagram.com/amanvid" target="_blank"><span id="insta"></span></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
 
 
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-		<li data-target="#myCarousel" data-slide-to="3"></li>
-		<li data-target="#myCarousel" data-slide-to="4"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="img/work/work4.jpg" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/work/work2.jpg" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/work/work1.jpg" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-		<div class="item">
-          <img src="img/work/work5.jpg" alt="Fourth slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-		<div class="item">
-          <img src="img/work/work3.jpg" alt="Fifth slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
-
-
-
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
+					<a ><img class="example-image" src="img/demopage/image-1.jpg" alt="image-1" /></a>
+    <div class="container about">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">A developer and designer. <span class="text-muted">But here's some other stuff.</span></h2>
+          <p class="lead">When I'm not developing sites, I'm teaching <a href="http://studio34yoga.com" target="_blank">yoga classes</a>, running with the 
+          	<a href="http://www.westphillyrunners.com/" target="_blank">West Philly Runners</a>, riding my <a class="fancybox" href="img/beatnik.jpg">Jamis Beatnik</a> day or night, blazing heat or freezing cold, 
+          	<a class="fancybox fancybox.iframe" href="goodreads.html">reading on my kindle</a> or hanging out with my <a class="fancybox" href="img/twocats.jpg">two amazing cats</a>. 
+          	This video has made an impression on my work in a big way: <a class="fancybox-media" href="http://youtu.be/s-CTkbHnpNQ">Always be knolling.</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive img-circle" src="img/top2.png" alt="Generic placeholder image">
+        </div>
+      </div>
+      
+      <hr class="featurette-divider">
+      
+      <!-- Three columns of text -->
+      <div class="row marketing">
         <div class="col-lg-4">
-          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
-          <h2>Front-End Developer</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <img class="img-circle" src="img/frontenddev.png" alt="Generic placeholder image">
+          <h2>Front End Developer</h2>
+          <p>HTML5, CSS3, Javascript, and JQuery are all in my wheelhouse. Experience coding from designers' PSDs, creating interactive features using jQuery's functions. Writing standards-compliant code including testing/debugging in multiple browsers and platforms.</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
+          <img class="img-circle" src="img/projmang.png" alt="Generic placeholder image">
           <h2>Project Manager</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p>Iterative approach to working with the client through the discovery and design process to arrive at a business/technical specification that developers can execute upon. Experience with Basecamp as task management interface with clients and Pivotal Tracker for agile development means in-house with developers. </p>
+          <p><a class="btn btn-default" href="resume/AmandaDeLeo-Resume.pdf" target="_blank" role="button">Download My Resume &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
+          <img class="img-circle" src="img/uxdesign.png" alt="Generic placeholder image">
           <h2>UX Designer</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p>Providing visual designs for task management, CRM, CMS, billing, reporting and dashboard of .NET SaaS. Working collaboratively alongside developers in an Agile environment to ensure a great user experience and coherent visual identity.</p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
 
       <!-- START THE FEATURETTES -->
 
-      <hr class="featurette-divider">
+      <hr class="featurette-divider" id="work">
 
-      <div class="row featurette" id="about">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
+      <div class="row featurette">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette" id="contact">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <h2 class="featurette-heading">Vesper Holdings <span class="text-muted">Role: Lead Developer</span></h2>
+          <p class="lead">Worked with NY based design company: <a href="http://www.abcdesignlab.co" target="_blank">ABC Design Lab</a> to translate visual concepts into functional websites across the Vesper brand. Was provided with Adobe Creative Suite files and brought them to life as a unified, functional experience on web and mobile platforms.</p>
         </div>
         <div class="col-md-7">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <img class="featurette-image img-responsive" src="img/work/2.png" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -196,23 +139,56 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <img class="featurette-image img-responsive" src="img/work/1.png" alt="Generic placeholder image">
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <h2 class="featurette-heading">Vesper Holdings <span class="text-muted">Role: Lead Developer</span></h2>
+          <p class="lead">Tech: Javascript, jQuery, HTML5, CSS3, Responsive, AJAX, ASP.Net, SQL, Google Map API, Team Foundation Server, Visual Studio 2013</p>
         </div>
       </div>
 
       <hr class="featurette-divider">
 
+      <div class="row featurette">
+        <div class="col-md-5">
+          <h2 class="featurette-heading">Online Leasing <span class="text-muted">Role: UX Designer</span></h2>
+          <p class="lead">Lead designer for the online application and first fully functional online lease platform for the Student Housing Market. Ensured the device agnostic design and development of the application and lease. </p>
+        </div>
+        <div class="col-md-7">
+          <img class="featurette-image img-responsive" src="img/work/4.png" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      
+      <div class="row featurette">
+        <div class="col-md-7">
+          <img class="featurette-image img-responsive" src="img/work/5.png" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-5">
+          <h2 class="featurette-heading">Michaels Group <span class="text-muted">Lead Developer</span></h2>
+          <p class="lead">Created landing pages using Bootstrap framework for a responsive front end design. Tech: Bootstrap, jQuery, Javascript, HTML5, CSS3, Responsive, AJAX, ASP.Net, SQL, Google Map API, Team Foundation Server, Visual Studio 2013</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      
+      <div class="row featurette" id="contact">
+        <div class="col-md-5">
+          <h2 class="featurette-heading">Contact!</h2>
+
+        </div>
+        <div class="col-md-7">
+
+        </div>
+      </div>
       <!-- /END THE FEATURETTES -->
 
 
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>Amanda Lynn DeLeo &middot; <a href="resume/AmandaDeLeo-Resume.pdf">Resume</a> &middot; <a href="tel:941-586-0145">941-586-0145</a> &middot; <a href="mailto:amandalynndeleo@gmail.com">amandalynndeleo@gmail.com</a></p>
       </footer>
 
     </div><!-- /.container -->
@@ -221,9 +197,18 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/docs.min.js"></script>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-19629218-1', 'www.amandalynndeleo.com');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+    </script>
   </body>
 </html>
